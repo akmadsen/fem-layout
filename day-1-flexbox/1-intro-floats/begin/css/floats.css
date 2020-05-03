@@ -44,31 +44,8 @@ div img {
 	clear: both;
 }
 
-.col-3-6 {
-	width: 92%;
-	margin-left: 4%;
-	float: left;
-}
-
-.col-6-6 {
-	width: 92%;
-	margin-left: 4%;
-	float: left
-}
-
-.col-3-12 {
-	width: 92%;
-	margin-left: 4%;
-	float: left
-}
-
-.col-9-12 {
-	width: 92%;
-	margin-left: 4%;
-	float: left
-}
-
-.col-12-12 {
+/* All columns are 12 cols wide at mobile sizes*/
+[class*="col-"] {
 	width: 92%;
 	margin-left: 4%;
 	float: left;
@@ -76,20 +53,14 @@ div img {
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
-	.col-3-6 {
-		width: 44%;
-	}
-
+	.col-3-6,
 	.col-6-6 {
 		width: 44%
 	}
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
-	.col-3-6 {
-		width: 20%;
-	}
-
+	.col-3-6,
 	.col-3-12 {
 		width: 20%;
 	}

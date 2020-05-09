@@ -93,4 +93,12 @@ div img {
 	.pull-md-1 {
 		order: initial;
 	}
+
+	.reverse-lg {
+		flex-direction: row-reverse;
+	}
+
+	.reverse-lg [class*="col-"]:first-child {
+		margin-right: 4%;
+	}
 }

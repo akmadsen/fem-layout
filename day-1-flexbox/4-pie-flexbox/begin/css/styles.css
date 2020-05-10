@@ -59,12 +59,6 @@ nav a:hover {
   display: flex;
 }
 
-.row:before,
-.row:after {
-    content:"";
-    display: table;
-    clear:both;
-}
 div.row {
   background-color: #fff6e0;
   border-bottom-left-radius: 10px;
@@ -145,9 +139,16 @@ footer a {
   .col-4,
   .col-1-2,
   .col-1-4  {
-  width: 96.66666%;
+  flex-basis: 96.66666%;
 }
 
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .align-center {
+    align-items: center;
+  }
 
 
 /* Small devices (tablets, 768px and up) */
@@ -163,14 +164,13 @@ footer a {
 .col-3,
 .col-4,
 .col-1-4 {
-  width: 96.66666%;
+  flex-basis: 96.66666%;
 }
 div.row {
   padding: 0 2em;
 }
 aside[class*='sidebar'] {
-  float: left;
-  width: 47%;
+  flex-basis: 47%;
   margin-right: 3%;
 }
 
@@ -187,27 +187,24 @@ aside[class*='sidebar'] {
   .wrapper {
       width: 97%;
       max-width: 1200px;
-      float: none;
   }
 
   [class*='col-'] {
-    float: left;
     margin-left: 3.33333%;
-    min-height: 1px;
   }
   .col-1,
   .col-1-2,
   .col-1-4 {
-    width: 20.83333%;
+    flex-basis: 20.83333%;
   }
   .col-2 {
-    width: 44.99999%;
+    flex-basis: 44.99999%;
   }
   .col-3 {
-    width: 69.16665%;
+    flex-basis: 69.16665%;
   }
   .col-4 {
-    width: 96.66666%;
+    flex-basis: 96.66666%;
   }
   h2 {
     font-size: 3em;

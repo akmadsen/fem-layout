@@ -1,8 +1,8 @@
 html {
   box-sizing: border-box;
 }
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
@@ -14,7 +14,27 @@ ul {
 	padding: 0;
 	list-style-type: none;
 }
-@media (min-width: 550px) {
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
 }
-@media (min-width: 850px) { 
+
+[class*="col-"] {
+	flex: 0 0 97%;
+}
+
+.full-width {
+	width: 100%;
+}
+
+@media (min-width: 550px) {
+	.col-3-6 {
+		flex-basis: 48.5%;
+	}
+}
+@media (min-width: 850px) {
+	.col-3-6 {
+		flex-basis: 32.333333%;
+	}
 }

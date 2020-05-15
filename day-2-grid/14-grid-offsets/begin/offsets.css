@@ -46,14 +46,16 @@ article aside {
 
 	.nested {
 		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"aside1 . aside2";
 	}
 
 	.nested aside:first-child {
-		grid-column: 1 / 2;
+		grid-area: aside1;
 	}
 
 	.nested aside:last-child {
-		grid-column: 3 / 4;
+		grid-area: aside2;
 	}
 }
 @media (min-width: 1000px) {
